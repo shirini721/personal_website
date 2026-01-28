@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Zahra Ashktorab - Research Staff Member at IBM Research specializing in Human-AI Interaction, Conversational AI, and Fairness in Machine Learning">
+    <meta name="author" content="Zahra Ashktorab">
+    <meta name="keywords" content="Human-AI Interaction, Conversational AI, Machine Learning, Fairness, Research, IBM">
+<link rel="shortcut icon" href="http://www.umd.edu/favicon.ico">
+    <title>Zahra Ashktorab - Human-AI Interaction Researcher</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./carousel_files/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./carousel_files/carousel.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --secondary-color: #2d2d2d;
+            --accent-color: #007acc;
+            --highlight-color: #00a8ff;
+            --text-color: #333333;
+            --light-bg: #f8f9fa;
+            --gradient-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-accent: linear-gradient(135deg, #007acc 0%, #00a8ff 100%);
+            --gradient-primary: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            --gradient-secondary: linear-gradient(135deg, #ecf0f1 0%, #bdc3c7 100%);
+            --sleek-gradient: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            --modern-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            scroll-behavior: smooth;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 80%, rgba(0, 122, 204, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(0, 168, 255, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            color: white;
+            animation: fadeInUp 1s ease-out;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.8rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero-description {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+        
+        .hero-buttons {
+            margin-top: 2rem;
+        }
+        
+        .btn-hero {
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            margin: 0 15px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+        
+        .btn-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .btn-hero:hover::before {
+            left: 100%;
+        }
+        
+        .btn-hero-primary {
+            background: white;
+            color: var(--primary-color);
+            border: 2px solid white;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .btn-hero-primary:hover {
+            background: var(--accent-color);
+            color: white;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 15px 35px rgba(0,122,204,0.3);
+        }
+        
+        .btn-hero-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255,255,255,0.8);
+            backdrop-filter: blur(10px);
+        }
+        
+        .btn-hero-secondary:hover {
+            background: rgba(255,255,255,0.1);
+            color: white;
+            transform: translateY(-3px) scale(1.05);
+            border-color: white;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+        
+        .research-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 1px solid #e8e8e8;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .research-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--accent-color);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .research-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .research-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+            border-color: var(--accent-color);
+        }
+        
+        .research-icon {
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .research-card:hover .research-icon {
+            transform: scale(1.1);
+            color: var(--highlight-color);
+        }
+        
+        .research-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .research-description {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .stats-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+        }
+        
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover .stat-number {
+            transform: scale(1.05);
+            color: var(--highlight-color);
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .publication-preview {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            border-left: 4px solid var(--accent-color);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .publication-preview::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 122, 204, 0.02);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .publication-preview:hover::before {
+            opacity: 1;
+        }
+        
+        .publication-preview:hover {
+            transform: translateX(4px) translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 122, 204, 0.15);
+        }
+        
+        .pub-title {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .pub-authors {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .pub-venue {
+            color: var(--secondary-color);
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+        
+        .pub-year {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        
+        .contact-section {
+            background: var(--primary-color);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            color: var(--secondary-color);
+        }
+        
+        .contact-text {
+            font-size: 1.1rem;
+        }
+        
+        .contact-text a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .contact-text a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .social-links {
+            margin-top: 2rem;
+        }
+        
+        .social-link {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: var(--secondary-color);
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .social-link:hover {
+            background: white;
+            color: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+        
+        .professional-image {
+            border-radius: 20px;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.12), 
+                        0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .professional-image:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 48px rgba(0,0,0,0.15), 
+                        0 4px 16px rgba(0,0,0,0.1);
+        }
+        
+        .image-container {
+            position: relative;
+            display: inline-block;
+            margin: 2rem 0;
+        }
+        
+        .image-container::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: -2;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.1); opacity: 0.3; }
+        }
+        
+        /* Alternative image styles - you can switch between these */
+        .image-modern {
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .image-modern::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .image-modern:hover::before {
+            opacity: 1;
+        }
+        
+        .image-modern:hover {
+            transform: scale(1.03) rotate(1deg);
+            box-shadow: 0 35px 70px rgba(102, 126, 234, 0.2);
+        }
+        
+        .image-hexagon {
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            transition: all 0.4s ease;
+        }
+        
+        .image-hexagon:hover {
+            transform: scale(1.05) rotate(5deg);
+            filter: brightness(1.1) contrast(1.1);
+        }
+        
+        .about-section {
+            padding: 80px 0;
+        }
+        
+        .about-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .highlight {
+            background: var(--accent-color);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+        }
+        
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--secondary-color), transparent);
+            margin: 60px 0;
+        }
+        
+        /* Enhanced Navigation Styles */
+        .navbar {
+            background: rgba(26, 26, 46, 0.95) !important;
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            padding: 0.8rem 1rem;
+        }
+        
+        .navbar.scrolled {
+            background: rgba(26, 26, 46, 0.98) !important;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 0;
+        }
+        
+        .navbar-brand {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: white;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin-right: 1rem;
+        }
+        
+        .navbar-brand:hover {
+            transform: scale(1.02);
+            filter: brightness(1.1);
+            color: white;
+        }
+        
+        .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.75rem 1.2rem !important;
+            margin: 0 0.3rem;
+            border-radius: 25px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .navbar-nav .nav-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+        
+        .navbar-nav .nav-link:hover::before {
+            left: 100%;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: white !important;
+            background: rgba(0, 122, 204, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 122, 204, 0.3);
+        }
+        
+        .navbar-nav .nav-link.active {
+            background: var(--accent-color);
+            color: white !important;
+            box-shadow: 0 8px 25px rgba(0, 122, 204, 0.4);
+        }
+        
+        .navbar-toggler {
+            border: none;
+            padding: 0.5rem;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-toggler:hover {
+            background: rgba(0, 122, 204, 0.2);
+            transform: scale(1.05);
+        }
+        
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        
+        .navbar-collapse {
+            background: rgba(26, 26, 46, 0.95);
+            border-radius: 15px;
+            margin-top: 1rem;
+            padding: 1rem;
+            backdrop-filter: blur(20px);
+        }
+        
+        @media (min-width: 768px) {
+            .navbar-collapse {
+                background: transparent;
+                margin-top: 0;
+                padding: 0;
+            }
+        }
+        
+        /* Container padding fix */
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            
+            .navbar {
+                padding: 0.6rem 0.8rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1.2rem;
+                padding: 0.4rem 0.8rem;
+                margin-right: 0.5rem;
+            }
+            
+            .navbar-nav .nav-link {
+                font-size: 1rem;
+                padding: 0.6rem 1rem !important;
+                margin: 0 0.2rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .btn-hero {
+                display: block;
+                margin: 10px auto;
+                max-width: 200px;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Zahra Ashktorab</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="patents.html">Patents</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="opensource.html">Open Source</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Zahra Ashktorab</h1>
+                <h2 class="hero-subtitle">Research Staff Member at IBM Research</h2>
+                <p class="hero-description">
+                    I specialize in <span class="highlight">Human-AI Interaction</span>, <span class="highlight">Conversational AI</span>, and <span class="highlight">Fairness in Machine Learning</span>. 
+                    My research focuses on creating better outcomes in human-AI collaboration through understanding user mental models, 
+                    improving conversational systems, and ensuring equitable AI technologies.
+                </p>
+                <div class="hero-buttons">
+                    <a href="publications.html" class="btn-hero btn-hero-primary">View My Research</a>
+                    <a href="CV_ZA.pdf" target="_blank" class="btn-hero btn-hero-secondary">Download CV</a>
+                    <a href="#contact" class="btn-hero btn-hero-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+        <div class="col-md-7">
+                    <h2 class="section-title text-left">About Me</h2>
+                    <div class="about-content">
+                        <p>
+                            I am a Research Staff Member at <strong>IBM Research</strong> where I investigate factors that enable better outcomes in human-AI interaction. 
+                            My research spans multiple areas including user mental models of AI agents, repair approaches in conversational breakdowns, 
+                            the impact of AI identity disclosure and communication directionality on collaboration outcomes, and user reliance in human-AI interaction.
+                        </p>
+                        <p>
+                            Most recently, I am examining the role of humans in the evaluation of Large Language Models (LLMs) in the context of LLM-as-a-judge, 
+                            contributing to the critical understanding of how we assess and validate AI systems.
+</p> 
+<p>
+                            Prior to joining IBM Research in 2017, I graduated with a Ph.D. in Human Computer Interaction from the 
+                            University of Maryland, College Park. During my Ph.D., I completed multiple internships at 
+                            IBM Research (Almaden), Microsoft Research (Cambridge, UK), and Data Science for Social Good.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center">
+                    <div class="image-container">
+                        <img class="professional-image" src="picforsite.png" width="350" alt="Picture of Zahra Ashktorab">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Interests Section -->
+    <section class="stats-section">
+        <div class="container">
+            <h2 class="section-title">Research Interests</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="research-title">Human-AI Interaction</h3>
+                        <p class="research-description">
+                            Understanding how humans interact with AI systems, including mental models, trust, and collaboration patterns.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 class="research-title">Conversational AI</h3>
+                        <p class="research-description">
+                            Developing and improving conversational systems, including repair strategies.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3 class="research-title">Fairness & Ethics</h3>
+                        <p class="research-description">
+                            Ensuring equitable AI technologies and understanding practitioner perspectives on fairness in ML.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3 class="research-title">LLM-as-a-Judge</h3>
+                        <p class="research-description">
+                            Examining how large language models can act as evaluators ("LLM-as-a-judge"), examining their strategies, front-end designs, and human-AI interactions.
+                        </p>
+                        <div class="mt-3">
+                            <a href="https://www.youtube.com/watch?v=trfUBIDeI1Y" target="_blank" class="btn btn-sm btn-outline-primary">
+                                <i class="fab fa-youtube"></i> Watch Video
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Publications -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">Recent Publications</h2>
+            <div class="row" id="recent-publications">
+                <!-- Publications will be loaded dynamically -->
+            </div>
+            <div class="text-center mt-4">
+                <a href="publications.html" class="btn btn-primary btn-lg">View All Publications</a>
+                <a href="#contact" class="btn btn-outline-primary btn-lg ml-2">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="section-title text-left" style="color: white;">Get In Touch</h2>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div class="contact-text">
+                            <a href="mailto:zahra.ashktorab@ibm.com">zahra.ashktorab@ibm.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-building contact-icon"></i>
+                        <div class="contact-text">IBM Research, Yorktown Heights, NY</div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3 style="color: white; margin-bottom: 2rem;">Connect With Me</h3>
+                    <div class="social-links">
+                        <a href="https://scholar.google.com/citations?user=yvZVcDQAAAAJ&hl=en" target="_blank" class="social-link">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/zashktorab/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://x.com/zashktorab" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:zahra.ashktorab@ibm.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Zahra Ashktorab. All rights reserved.</p>
+        </div>
+      </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="./carousel_files/jquery-3.1.1.slim.min.js"></script>
+    <script src="./carousel_files/tether.min.js"></script>
+    <script src="./carousel_files/bootstrap.min.js"></script>
+    <script src="./carousel_files/holder.min.js"></script>
+    <script src="./carousel_files/ie10-viewport-bug-workaround.js"></script>
+  
+    <!-- Publications Data -->
+    <script src="publications_data.js"></script>
+    
+    <script>
+        // Enhanced Navigation Bar Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.querySelector('.navbar');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            // Add scroll effect to navbar
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+            
+            // Add active class to current page link
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Smooth scrolling for anchor links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href.startsWith('#')) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }
+                });
+            });
+            
+            // Add hover effects to navbar brand
+            const navbarBrand = document.querySelector('.navbar-brand');
+            navbarBrand.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            
+            navbarBrand.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+
+        // Load Recent Publications
+        function loadRecentPublications() {
+            if (typeof PUBLICATIONS_DATA !== 'undefined' && PUBLICATIONS_DATA.publications) {
+                const publications = PUBLICATIONS_DATA.publications;
+                
+                // Sort publications by year (most recent first)
+                const sortedPubs = [...publications].sort((a, b) => {
+                    const yearA = parseInt(a.year) || 0;
+                    const yearB = parseInt(b.year) || 0;
+                    return yearB - yearA; // Most recent first
+                });
+                
+                // Get the 5 most recent publications
+                const recentPubs = sortedPubs.slice(0, 5);
+                
+                const container = document.getElementById('recent-publications');
+                container.innerHTML = '';
+                
+                recentPubs.forEach((pub, index) => {
+                    const colClass = index < 2 ? 'col-md-6' : 'col-md-4';
+                    const pubElement = createPublicationElement(pub);
+                    const colDiv = document.createElement('div');
+                    colDiv.className = colClass + ' mb-4';
+                    colDiv.appendChild(pubElement);
+                    container.appendChild(colDiv);
+                });
+            }
+        }
+        
+        function createPublicationElement(pub) {
+            const div = document.createElement('div');
+            div.className = 'publication-preview';
+            
+            // Convert relative Google Scholar links to absolute URLs
+            const scholarLink = pub.link ? 
+                (pub.link.startsWith('/') ? `https://scholar.google.com${pub.link}` : pub.link) : 
+                null;
+            
+            const title = scholarLink ? 
+                `<a href="${scholarLink}" target="_blank">${pub.title}</a>` : 
+                pub.title;
+            
+            div.innerHTML = `
+                <div class="pub-title">${title}</div>
+                <div class="pub-authors">${pub.authors || ''}</div>
+                <div class="pub-venue">${pub.venue || ''}</div>
+                <div class="pub-year">${pub.year || ''}</div>
+            `;
+            
+            return div;
+        }
+        
+        // Load publications when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            loadRecentPublications();
+        });
+    </script>
+</body>
+</html>

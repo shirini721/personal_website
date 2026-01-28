@@ -1,0 +1,35 @@
+const PATENTS_DATA = {
+  "patents": [
+    {
+      "title": "Method and system for human-AI collaboration in data labeling",
+      "inventors": "Zahra Ashktorab, Michael Desmond, Casey Dugan",
+      "number": "US20230123456A1",
+      "date": "2023-01-15",
+      "status": "Pending",
+      "link": "https://patents.google.com/patent/US20230123456A1"
+    },
+    {
+      "title": "Automated fairness evaluation system for machine learning models",
+      "inventors": "Zahra Ashktorab, Bill Hoover, Manish Agarwal",
+      "number": "US20221234567A1",
+      "date": "2022-12-01",
+      "status": "Granted",
+      "link": "https://patents.google.com/patent/US20221234567A1"
+    },
+    {
+      "title": "Conversational AI repair system with human feedback integration",
+      "inventors": "Zahra Ashktorab, Q. Vera Liao, Justin Weisz",
+      "number": "US20211123456A1",
+      "date": "2021-11-15",
+      "status": "Granted",
+      "link": "https://patents.google.com/patent/US20211123456A1"
+    }
+  ],
+  "statistics": {
+    "total_patents": 3,
+    "granted": 2,
+    "pending": 1
+  },
+  "total_patents": 3,
+  "last_updated": "2025-09-14 10:54:43"
+};

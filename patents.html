@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Zahra Ashktorab - Patents">
+    <meta name="author" content="Zahra Ashktorab">
+    <link rel="shortcut icon" href="http://www.umd.edu/favicon.ico">
+    <title>Zahra Ashktorab - Patents</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./carousel_files/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./carousel_files/carousel.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #1a1a1a;
+            --secondary-color: #2d2d2d;
+            --accent-color: #007acc;
+            --highlight-color: #00a8ff;
+            --text-color: #333333;
+            --light-bg: #f8f9fa;
+            --sleek-gradient: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            scroll-behavior: smooth;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Enhanced Navigation Styles */
+        .navbar {
+            background: rgba(26, 26, 46, 0.95) !important;
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            padding: 0.8rem 1rem;
+        }
+        
+        .navbar.scrolled {
+            background: rgba(26, 26, 46, 0.98) !important;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 0;
+        }
+        
+        .navbar-brand {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: white;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin-right: 1rem;
+        }
+        
+        .navbar-brand:hover {
+            transform: scale(1.02);
+            filter: brightness(1.1);
+            color: white;
+        }
+        
+        .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.9) !important;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.75rem 1.2rem !important;
+            margin: 0 0.3rem;
+            border-radius: 25px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .navbar-nav .nav-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+        
+        .navbar-nav .nav-link:hover::before {
+            left: 100%;
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: white !important;
+            background: rgba(0, 122, 204, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 122, 204, 0.3);
+        }
+        
+        .navbar-nav .nav-link.active {
+            background: var(--accent-color);
+            color: white !important;
+            box-shadow: 0 8px 25px rgba(0, 122, 204, 0.4);
+        }
+        
+        .navbar-toggler {
+            border: none;
+            padding: 0.5rem;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .navbar-toggler:hover {
+            background: rgba(0, 122, 204, 0.2);
+            transform: scale(1.05);
+        }
+        
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        
+        .navbar-collapse {
+            background: rgba(26, 26, 46, 0.95);
+            border-radius: 15px;
+            margin-top: 1rem;
+            padding: 1rem;
+            backdrop-filter: blur(20px);
+        }
+        
+        @media (min-width: 768px) {
+            .navbar-collapse {
+                background: transparent;
+                margin-top: 0;
+                padding: 0;
+            }
+        }
+        
+        /* Container padding fix */
+        .container {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            
+            .navbar {
+                padding: 0.6rem 0.8rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1.2rem;
+                padding: 0.4rem 0.8rem;
+                margin-right: 0.5rem;
+            }
+            
+            .navbar-nav .nav-link {
+                font-size: 1rem;
+                padding: 0.6rem 1rem !important;
+                margin: 0 0.2rem;
+            }
+        }
+        
+        /* Page Header */
+        .page-header {
+            background: var(--sleek-gradient);
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 80%, rgba(0, 122, 204, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(0, 168, 255, 0.1) 0%, transparent 50%);
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+        
+        /* Statistics Section */
+        .stats {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            margin: 40px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 1px solid #e8e8e8;
+        }
+        
+        .stats h4 {
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        
+        .stat-item {
+            display: inline-block;
+            margin-right: 40px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        /* Search and Filter Styles */
+        .search-container {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            margin: 40px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 1px solid #e8e8e8;
+        }
+        
+        .search-container h4 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .search-box {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #e8e8e8;
+            border-radius: 12px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .search-box:focus {
+            border-color: var(--accent-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 122, 204, 0.1);
+        }
+        
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid var(--accent-color);
+            background-color: white;
+            color: var(--accent-color);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .filter-btn:hover, .filter-btn.active {
+            background-color: var(--accent-color);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 122, 204, 0.3);
+        }
+        
+        .year-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .year-filter select {
+            padding: 10px 15px;
+            border: 2px solid #e8e8e8;
+            border-radius: 8px;
+            background: white;
+            transition: all 0.3s ease;
+        }
+        
+        .year-filter select:focus {
+            border-color: var(--accent-color);
+            outline: none;
+        }
+        
+        .results-summary {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        /* Patent Items */
+        .patent-item {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            border-left: 4px solid var(--accent-color);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .patent-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 122, 204, 0.02);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .patent-item:hover::before {
+            opacity: 1;
+        }
+        
+        .patent-item:hover {
+            transform: translateX(4px) translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 122, 204, 0.15);
+        }
+        
+        .patent-title {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+        
+        .patent-title a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .patent-title a:hover {
+            color: var(--accent-color);
+        }
+        
+        .patent-inventors {
+            color: #666;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        
+        .patent-number {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        
+        .patent-date {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .patent-status {
+            color: #888;
+            font-weight: 500;
+            margin-top: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .patent-links {
+            margin-top: 15px;
+        }
+        
+        .patent-links a {
+            margin-right: 20px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .patent-links a:hover {
+            color: var(--highlight-color);
+        }
+        
+        /* Loading and Error States */
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .error {
+            color: #dc3545;
+            text-align: center;
+            padding: 60px;
+            font-size: 1.1rem;
+        }
+        
+        /* Hidden class for filtering */
+        .hidden {
+            display: none !important;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .stat-item {
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+            
+            .filter-buttons {
+                justify-content: center;
+            }
+            
+            .filter-btn {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Zahra Ashktorab</a>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="publications.html">Publications</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="patents.html">Patents <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="opensource.html">Open Source</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Patents</h1>
+            <p>Intellectual property and patent portfolio</p>
+        </div>
+    </section>
+
+    <div class="container" style="margin-top: 40px;">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <!-- Statistics Section -->
+                <div class="stats" id="stats-section" style="display: none;">
+                    <h4>Patent Statistics</h4>
+                    <div class="stat-item">
+                        <div class="stat-number" id="total-patents">0</div>
+                        <div class="stat-label">Patents</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="granted-patents">0</div>
+                        <div class="stat-label">Granted</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="pending-patents">0</div>
+                        <div class="stat-label">Pending</div>
+                    </div>
+                </div>
+
+                <!-- Search and Filter Section -->
+                <div class="search-container" id="search-container" style="display: none;">
+                    <h4>Search & Filter Patents</h4>
+                    <input type="text" id="search-box" class="search-box" placeholder="Search by title, inventors, or patent number...">
+                    
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="granted">Granted</button>
+                        <button class="filter-btn" data-filter="pending">Pending</button>
+                        <button class="filter-btn" data-filter="ai">AI/ML</button>
+                        <button class="filter-btn" data-filter="systems">Systems</button>
+                    </div>
+                    
+                    <div class="year-filter">
+                        <label for="year-select">Filter by Year:</label>
+                        <select id="year-select">
+                            <option value="all">All Years</option>
+                        </select>
+                        <button id="clear-filters" class="filter-btn">Clear Filters</button>
+                    </div>
+                    
+                    <div class="results-summary" id="results-summary" style="display: none;"></div>
+                </div>
+
+                <!-- Loading Message -->
+                <div id="loading-message" class="loading">
+                    <i class="fas fa-spinner fa-spin"></i> Loading patents...
+                </div>
+
+                <!-- Error Message -->
+                <div id="error-message" class="error" style="display: none;">
+                    Error loading patents. Please try again later.
+                </div>
+
+                <!-- Patents Container -->
+                <div id="patents-container" style="display: none;">
+                    <!-- Patents will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="./carousel_files/jquery-3.1.1.slim.min.js"></script>
+    <script src="./carousel_files/tether.min.js"></script>
+    <script src="./carousel_files/bootstrap.min.js"></script>
+    <script src="./carousel_files/holder.min.js"></script>
+    <script src="./carousel_files/ie10-viewport-bug-workaround.js"></script>
+    
+    <!-- Patents Data -->
+    <script src="patents_data.js"></script>
+
+    <script>
+        // Navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.querySelector('.navbar');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+            
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+                    link.classList.add('active');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href.startsWith('#')) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }
+                });
+            });
+        });
+
+        // Function to load patents from embedded data
+        function loadPatents() {
+            try {
+                if (typeof PATENTS_DATA !== 'undefined' && PATENTS_DATA.patents) {
+                    displayPatents(PATENTS_DATA);
+                } else {
+                    // Fallback to manual patents if embedded data doesn't exist
+                    showManualPatents();
+                }
+            } catch (error) {
+                console.error('Error loading patents:', error);
+                // Fallback to manual patents
+                showManualPatents();
+            }
+        }
+        
+        function displayPatents(data) {
+            document.getElementById('loading-message').style.display = 'none';
+            document.getElementById('patents-container').style.display = 'block';
+            document.getElementById('stats-section').style.display = 'block';
+            document.getElementById('search-container').style.display = 'block';
+            
+            // Store patents data globally for filtering
+            window.allPatents = data.patents || [];
+            
+            // Update statistics
+            if (data.statistics) {
+                document.getElementById('total-patents').textContent = data.total_patents || 0;
+                document.getElementById('granted-patents').textContent = data.statistics.granted || 0;
+                document.getElementById('pending-patents').textContent = data.statistics.pending || 0;
+            }
+            
+            // Display all patents
+            displayAllPatents(data.patents);
+            
+            // Setup search and filter functionality
+            setupSearchAndFilters(data.patents);
+        }
+        
+        function displayAllPatents(patents, alreadySorted = false) {
+            const container = document.getElementById('patents-container');
+            container.innerHTML = '<h2>All Patents</h2>';
+            
+            if (patents && patents.length > 0) {
+                let sortedPatents = patents;
+                
+                // Sort patents by date (most recent first) if not already sorted
+                if (!alreadySorted) {
+                    sortedPatents = [...patents].sort((a, b) => {
+                        const dateA = new Date(a.date) || new Date(0);
+                        const dateB = new Date(b.date) || new Date(0);
+                        return dateB - dateA; // Most recent first
+                    });
+                }
+                
+                sortedPatents.forEach((patent, index) => {
+                    const patentElement = createPatentElement(patent, index + 1);
+                    container.appendChild(patentElement);
+                });
+            } else {
+                container.innerHTML += '<p>No patents found.</p>';
+            }
+        }
+        
+        function setupSearchAndFilters(patents) {
+            // Populate year filter
+            const yearSelect = document.getElementById('year-select');
+            const years = [...new Set(patents.map(patent => patent.date ? new Date(patent.date).getFullYear() : null).filter(year => year))].sort((a, b) => b - a);
+            years.forEach(year => {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                yearSelect.appendChild(option);
+            });
+            
+            // Setup event listeners
+            document.getElementById('search-box').addEventListener('input', filterPatents);
+            document.getElementById('year-select').addEventListener('change', filterPatents);
+            document.getElementById('clear-filters').addEventListener('click', clearFilters);
+            
+            // Setup filter buttons
+            document.querySelectorAll('.filter-btn[data-filter]').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    document.querySelectorAll('.filter-btn[data-filter]').forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    filterPatents();
+                });
+            });
+        }
+        
+        function filterPatents() {
+            const searchTerm = document.getElementById('search-box').value.toLowerCase();
+            const selectedYear = document.getElementById('year-select').value;
+            const activeFilter = document.querySelector('.filter-btn[data-filter].active').dataset.filter;
+            
+            const filteredPatents = window.allPatents.filter(patent => {
+                // Search filter
+                const matchesSearch = !searchTerm || 
+                    patent.title.toLowerCase().includes(searchTerm) ||
+                    patent.inventors.toLowerCase().includes(searchTerm) ||
+                    patent.number.toLowerCase().includes(searchTerm);
+                
+                // Year filter
+                const patentYear = patent.date ? new Date(patent.date).getFullYear() : null;
+                const matchesYear = selectedYear === 'all' || patentYear == selectedYear;
+                
+                // Category filter
+                let matchesCategory = true;
+                if (activeFilter !== 'all') {
+                    const title = patent.title.toLowerCase();
+                    
+                    switch (activeFilter) {
+                        case 'granted':
+                            matchesCategory = patent.status && patent.status.toLowerCase().includes('granted');
+                            break;
+                        case 'pending':
+                            matchesCategory = patent.status && patent.status.toLowerCase().includes('pending');
+                            break;
+                        case 'ai':
+                            matchesCategory = title.includes('artificial intelligence') || title.includes('machine learning') || 
+                                            title.includes('neural network') || title.includes('deep learning') ||
+                                            title.includes('ai') || title.includes('ml');
+                            break;
+                        case 'systems':
+                            matchesCategory = title.includes('system') || title.includes('architecture') || 
+                                            title.includes('distributed') || title.includes('cloud');
+                            break;
+                    }
+                }
+                
+                return matchesSearch && matchesYear && matchesCategory;
+            });
+            
+            // Sort filtered patents by date (most recent first)
+            const sortedFilteredPatents = [...filteredPatents].sort((a, b) => {
+                const dateA = new Date(a.date) || new Date(0);
+                const dateB = new Date(b.date) || new Date(0);
+                return dateB - dateA; // Most recent first
+            });
+            
+            // Update display
+            displayAllPatents(sortedFilteredPatents, true);
+            
+            // Update results summary
+            const resultsSummary = document.getElementById('results-summary');
+            const totalPatents = window.allPatents.length;
+            const filteredCount = filteredPatents.length;
+            
+            if (searchTerm || selectedYear !== 'all' || activeFilter !== 'all') {
+                resultsSummary.textContent = `Showing ${filteredCount} of ${totalPatents} patents`;
+                resultsSummary.style.display = 'block';
+            } else {
+                resultsSummary.style.display = 'none';
+            }
+        }
+        
+        function clearFilters() {
+            document.getElementById('search-box').value = '';
+            document.getElementById('year-select').value = 'all';
+            document.querySelectorAll('.filter-btn[data-filter]').forEach(btn => btn.classList.remove('active'));
+            document.querySelector('.filter-btn[data-filter="all"]').classList.add('active');
+            filterPatents();
+        }
+        
+        function createPatentElement(patent, number) {
+            const div = document.createElement('div');
+            div.className = 'patent-item';
+            
+            // Convert relative Google Patents links to absolute URLs
+            const patentLink = patent.link ? 
+                (patent.link.startsWith('/') ? `https://patents.google.com${patent.link}` : patent.link) : 
+                null;
+            
+            const title = patentLink ? 
+                `<a href="${patentLink}" target="_blank">${patent.title}</a>` : 
+                patent.title;
+            
+            div.innerHTML = `
+                <div class="patent-title">${title}</div>
+                <div class="patent-inventors">${patent.inventors || ''}</div>
+                <div class="patent-number">${patent.number || ''}</div>
+                <div class="patent-date">${patent.date || ''}</div>
+                ${patent.status ? `<div class="patent-status">Status: ${patent.status}</div>` : ''}
+            `;
+            
+            return div;
+        }
+        
+        function showManualPatents() {
+            document.getElementById('loading-message').style.display = 'none';
+            document.getElementById('patents-container').style.display = 'block';
+            document.getElementById('stats-section').style.display = 'block';
+            
+            // Update stats (these would normally come from Google Patents)
+            document.getElementById('total-patents').textContent = 'Loading...';
+            document.getElementById('granted-patents').textContent = 'Loading...';
+            document.getElementById('pending-patents').textContent = 'Loading...';
+        }
+        
+        function showError() {
+            document.getElementById('loading-message').style.display = 'none';
+            document.getElementById('error-message').style.display = 'block';
+        }
+        
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load patents immediately since data is embedded
+            loadPatents();
+        });
+        
+        // Add smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
