@@ -286,19 +286,48 @@
             });
         });
 
+        // Venue prestige tiers, used as a proxy for impact since per-paper
+        // citation counts aren't available (Scholar doesn't expose them in
+        // bulk exports, and this widget has no live per-paper citation feed).
+        const TOP_TIER_VENUE_KEYWORDS = [
+            'chi conference', 'computer supported cooperative work', 'cscw',
+            'uist', 'user interface software and technology',
+            'transactions on computer-human interaction', 'tochi',
+            'proceedings of the acm on human-computer interaction',
+            'aaai conference', 'empirical methods in natural language processing',
+            'neural information processing systems', 'ijcai',
+            'designing interactive systems',
+            'international conference on intelligent user interfaces'
+        ];
+        const LOW_TIER_VENUE_KEYWORDS = [
+            'arxiv', 'companion proceedings', 'extended abstracts', 'workshop', 'symposium'
+        ];
+
+        function getVenueTier(venue) {
+            const v = (venue || '').toLowerCase();
+            if (LOW_TIER_VENUE_KEYWORDS.some(k => v.includes(k))) return 1;
+            if (TOP_TIER_VENUE_KEYWORDS.some(k => v.includes(k))) return 3;
+            return 2; // default: unrecognized peer-reviewed venue/journal
+        }
+
+        function recencyScore(pub) {
+            const year = parseInt(pub.year) || 0;
+            // Citations are a minor tiebreaker: currently always 0 in the data,
+            // but this keeps the score meaningful if real counts are added later.
+            return year + getVenueTier(pub.venue) + (pub.citations || 0) * 0.01;
+        }
+
         // Load Recent Publications
         function loadRecentPublications() {
             if (typeof PUBLICATIONS_DATA !== 'undefined' && PUBLICATIONS_DATA.publications) {
                 const publications = PUBLICATIONS_DATA.publications;
-                
-                // Sort publications by year (most recent first)
-                const sortedPubs = [...publications].sort((a, b) => {
-                    const yearA = parseInt(a.year) || 0;
-                    const yearB = parseInt(b.year) || 0;
-                    return yearB - yearA; // Most recent first
-                });
-                
-                // Get the 5 most recent publications
+
+                // Rank by recency and venue prestige (a proxy for impact) so a
+                // companion/workshop paper or bare preprint doesn't crowd out
+                // a peer-reviewed paper from the same year.
+                const sortedPubs = [...publications].sort((a, b) => recencyScore(b) - recencyScore(a));
+
+                // Get the 5 most recent, highest-impact publications
                 const recentPubs = sortedPubs.slice(0, 5);
                 
                 const container = document.getElementById('recent-publications');
