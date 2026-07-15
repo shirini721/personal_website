@@ -393,14 +393,6 @@
       "link": "/citations?view_op=view_citation&hl=en&user=yvZVcDQAAAAJ&cstart=40&citation_for_view=yvZVcDQAAAAJ:JV2RwH3_ST0C"
     },
     {
-      "title": "Knowledge Graph Driven Content Generation",
-      "authors": "Q Pan, J Johnson, Z Ashktorab, C Dugan",
-      "venue": "US Patent 12,412,033,",
-      "year": "2025",
-      "citations": 0,
-      "link": "/citations?view_op=view_citation&hl=en&user=yvZVcDQAAAAJ&cstart=40&citation_for_view=yvZVcDQAAAAJ:-f6ydRqryjwC"
-    },
-    {
       "title": "AI Assisted Data Labeling",
       "authors": "M Desmond, E Duesterwald, K Brimijoin, M Muller, A Sharma, NN Joshi, ...",
       "venue": "Annual Conference on Neural Information Processing Systems,",
@@ -473,14 +465,6 @@
       "link": "/citations?view_op=view_citation&hl=en&user=yvZVcDQAAAAJ&cstart=40&citation_for_view=yvZVcDQAAAAJ:k_IJM867U9cC"
     },
     {
-      "title": "Guiding a user to interact with an intelligent computing system using best practices",
-      "authors": "M Brachman, Z Ashktorab, M Desmond, HJ Do, C Dugan, J Johnson, ...",
-      "venue": "US Patent 12,617,419,",
-      "year": "2026",
-      "citations": 0,
-      "link": "/citations?view_op=view_citation&hl=en&user=yvZVcDQAAAAJ&cstart=40&citation_for_view=yvZVcDQAAAAJ:GnPB-g6toBAC"
-    },
-    {
       "title": "Interaction Configurations and Prompt Guidance in Conversational AI for Question Answering in Human-AI Teams",
       "authors": "J Song, Z Ashktorab, Q Pan, C Dugan, W Geyer, TW Malone",
       "venue": "arXiv preprint arXiv:2505.01648,",
@@ -495,14 +479,6 @@
       "year": "2025",
       "citations": 0,
       "link": "/citations?view_op=view_citation&hl=en&user=yvZVcDQAAAAJ&cstart=60&citation_for_view=yvZVcDQAAAAJ:NMxIlDl6LWMC"
-    },
-    {
-      "title": "Computer-based interactive prompt variation generator",
-      "authors": "Q Pan, HJ Do, Z Ashktorab, M Desmond, J Johnson, C Dugan",
-      "venue": "US Patent 12,536,208,",
-      "year": "2026",
-      "citations": 0,
-      "link": "/citations?view_op=view_citation&hl=en&user=yvZVcDQAAAAJ&cstart=60&citation_for_view=yvZVcDQAAAAJ:isC4tDSrTZIC"
     },
     {
       "title": "Establishing the Cooperative Game Wavelength as a Testbed to Explore Mutual Theory of Mind",
@@ -521,28 +497,12 @@
       "link": "/citations?view_op=view_citation&hl=en&user=yvZVcDQAAAAJ&cstart=60&citation_for_view=yvZVcDQAAAAJ:j3f4tGmQtD8C"
     },
     {
-      "title": "Moderating artificial intelligence (ai) agent interlocution in group dialog environments",
-      "authors": "M Desmond, Z Ashktorab, M Brachman, J Johnson, C Dugan, Q Pan",
-      "venue": "US Patent 12,495,010,",
-      "year": "2025",
-      "citations": 0,
-      "link": "/citations?view_op=view_citation&hl=en&user=yvZVcDQAAAAJ&cstart=60&citation_for_view=yvZVcDQAAAAJ:_Qo2XoVZTnwC"
-    },
-    {
       "title": "Trust and Reliance in Evolving Human-AI Workflows, at CHI 2024",
       "authors": "Z Ashktorab, G Bansal, Z Bucinca, K Holstein, J Hullman, A Smith-renner, ...",
       "venue": "ACM CHI Conference on Human Factors in Computing Systems,",
       "year": "2024",
       "citations": 0,
       "link": "/citations?view_op=view_citation&hl=en&user=yvZVcDQAAAAJ&cstart=60&citation_for_view=yvZVcDQAAAAJ:mB3voiENLucC"
-    },
-    {
-      "title": "Assertiveness module for developing mental model",
-      "authors": "Q Pan, J Johnson, Z Ashktorab, D Wang",
-      "venue": "US Patent 11,824,819,",
-      "year": "2023",
-      "citations": 0,
-      "link": "/citations?view_op=view_citation&hl=en&user=yvZVcDQAAAAJ&cstart=60&citation_for_view=yvZVcDQAAAAJ:hC7cP41nSMkC"
     },
     {
       "title": "The Design and Development of Games with a Purpose for AI Systems",
@@ -561,25 +521,9 @@
       "link": "/citations?view_op=view_citation&hl=en&user=yvZVcDQAAAAJ&cstart=60&citation_for_view=yvZVcDQAAAAJ:ULOm3_A8WrAC"
     },
     {
-      "title": "Designing Scalable and Transparent Interfaces for Multi-Criteria Evaluation of LLM Outputs",
-      "authors": "A El Asery, L Sharma, Z Ashktorab, Q Pan, JD Weisz",
-      "venue": "ACM CHI Conference on Human Factors in Computing Systems,",
-      "year": "2025",
-      "citations": 0,
-      "link": "/citations?view_op=view_citation&hl=en&user=yvZVcDQAAAAJ&cstart=60&citation_for_view=yvZVcDQAAAAJ:maZDTaKrznsC"
-    },
-    {
       "title": "EvalAssist: Insights on Task-Specific Evaluations and AI-Assisted Judgment Strategy Preferences",
       "authors": "Z Ashktorab, M Desmond, Q Pan, JM Johnson, M Santillán Cooper, EM Daly, R Nair, T Pedapati, HJ Do, W Geyer",
       "venue": "Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology, 1-23,",
-      "year": "2025",
-      "citations": 0,
-      "link": ""
-    },
-    {
-      "title": "Synthetic Data for Evaluation: Supporting LLM-as-a-Judge Workflows with EvalAssist",
-      "authors": "E Daly, E Miehling, HJ Do, J Gajcin, MS Cooper, M Desmond, Q Pan, W Geyer, Z Ashktorab",
-      "venue": "Conference on Empirical Methods in Natural Language Processing,",
       "year": "2025",
       "citations": 0,
       "link": ""
@@ -604,14 +548,6 @@
       "title": "The behavioral fabric of llm-powered gui agents: Human values and interaction outcomes",
       "authors": "SA Gebreegziabher, Y Yang, C Chiang, H Yoo, C Chen, HJ Do, Z Ashktorab, W Geyer, D Gómez-Zará, TJ Li",
       "venue": "Proceedings of the 31st International Conference on Intelligent User Interfaces, 909-927,",
-      "year": "2026",
-      "citations": 0,
-      "link": ""
-    },
-    {
-      "title": "The Behavioral Fabric of LLM-Powered GUI Agents: Human Values and Interaction Outcomes",
-      "authors": "S Araya Gebreegziabher, Y Yang, C Chiang, H Yoo, C Chen, HJ Do, Z Ashktorab, W Geyer, D Gómez-Zará, T Jia-Jun Li",
-      "venue": "arXiv e-prints, arXiv: 2601.16356,",
       "year": "2026",
       "citations": 0,
       "link": ""
@@ -662,5 +598,5 @@
     "h_index": 25,
     "i10_index": 35
   },
-  "total_publications": 82
+  "total_publications": 74
 }
