@@ -1,35 +1,51 @@
 {
   "patents": [
     {
-      "title": "Method and system for human-AI collaboration in data labeling",
-      "inventors": "Zahra Ashktorab, Michael Desmond, Casey Dugan",
-      "number": "US20230123456A1",
-      "date": "2023-01-15",
-      "status": "Pending",
-      "link": "https://patents.google.com/patent/US20230123456A1"
+      "title": "Computer-based interactive prompt variation generator",
+      "inventors": "Qian Pan, Hyo Jin Do, Zahra Ashktorab, Michael Desmond, James Johnson, Casey Dugan",
+      "number": "US 12,536,208",
+      "date": "2026",
+      "status": "Granted",
+      "link": ""
     },
     {
-      "title": "Automated fairness evaluation system for machine learning models",
-      "inventors": "Zahra Ashktorab, Bill Hoover, Manish Agarwal",
-      "number": "US20221234567A1",
-      "date": "2022-12-01",
+      "title": "Guiding a user to interact with an intelligent computing system using best practices",
+      "inventors": "Michelle Brachman, Zahra Ashktorab, Michael Desmond, Hyo Jin Do, Casey Dugan, James Johnson, Qian Pan, Raj Sanjay Shah",
+      "number": "US 12,617,419",
+      "date": "2026",
       "status": "Granted",
-      "link": "https://patents.google.com/patent/US20221234567A1"
+      "link": ""
     },
     {
-      "title": "Conversational AI repair system with human feedback integration",
-      "inventors": "Zahra Ashktorab, Q. Vera Liao, Justin Weisz",
-      "number": "US20211123456A1",
-      "date": "2021-11-15",
+      "title": "Knowledge graph driven content generation",
+      "inventors": "Qian Pan, James Johnson, Zahra Ashktorab, Casey Dugan",
+      "number": "US 12,412,033",
+      "date": "2025",
       "status": "Granted",
-      "link": "https://patents.google.com/patent/US20211123456A1"
+      "link": ""
+    },
+    {
+      "title": "Moderating artificial intelligence (AI) agent interlocution in group dialog environments",
+      "inventors": "Michael Desmond, Zahra Ashktorab, Michelle Brachman, James Johnson, Casey Dugan, Qian Pan",
+      "number": "US 12,495,010",
+      "date": "2025",
+      "status": "Granted",
+      "link": ""
+    },
+    {
+      "title": "Assertiveness module for developing mental model",
+      "inventors": "Qian Pan, James Johnson, Zahra Ashktorab, Dakuo Wang",
+      "number": "US 11,824,819",
+      "date": "2023",
+      "status": "Granted",
+      "link": ""
     }
   ],
   "statistics": {
-    "total_patents": 3,
-    "granted": 2,
-    "pending": 1
+    "total_patents": 5,
+    "granted": 5,
+    "pending": 0
   },
-  "total_patents": 3,
-  "last_updated": "2025-09-14 10:54:43"
+  "total_patents": 5,
+  "last_updated": "2026-07-15 02:16:41"
 }
